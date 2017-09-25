@@ -1,0 +1,8 @@
+name = get Car Model
+description = handles selection of model (when brand selected)
+package = Core
+version = VERSION
+core = 7.x
+scripts[] = ajax_link.js
+
+

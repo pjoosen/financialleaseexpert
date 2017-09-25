@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<voertuig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://eigenwebsite.doorlinkenvoorraad.nl/docs/2.9/voertuig.xsd" actie="add" versie="2.9">
+	<voertuignr_hexon>13277918</voertuignr_hexon>
+	<voertuignr>4475348-AWD</voertuignr>
+	<voertuignr_klant/>
+	<klantnummer>32491</klantnummer>
+	<kenteken>36ZBPS</kenteken>
+	<merk>Škoda</merk>
+	<model>A4</model>
+	<type>Avant 2.0 ADVANCE AUTOMAAT | NAVI | CLIMATE CONTROLE | LMV | CRUISE CONTROLE | PDC | TREKHAAK</type>
+	<voertuigsoort>AUTO</voertuigsoort>
+	<carrosserie>Stationwagon</carrosserie>
+	<aantal_deuren>5</aantal_deuren>
+	<tellerstand eenheid="K">149894</tellerstand>
+	<brandstof>B</brandstof>
+	<transmissie>A</transmissie>
+	<aantal_versnellingen/>
+	<btw_marge>M</btw_marge>
+	<nieuw_voertuig>n</nieuw_voertuig>
+	<laktint/>
+	<kleur/>
+	<basiskleur>grijs</basiskleur>
+	<laksoort>metallic</laksoort>
+	<bouwjaar>2008</bouwjaar>
+	<datum_deel_1>02-01-2008</datum_deel_1>
+	<datum_deel_1a>02-01-2008</datum_deel_1a>
+	<datum_deel_1b>11-01-2017</datum_deel_1b>
+	<verkoopprijs_particulier bpm="in">10450</verkoopprijs_particulier>
+	<actieprijs/>
+	<verkoopprijs_handel bpm="in">9950</verkoopprijs_handel>
+	<apk tot="02-01-2017" bij_aflevering="n"></apk>
+	<massa>1425</massa>
+	<max_trekgewicht>1300</max_trekgewicht>
+	<cilinder_aantal>4</cilinder_aantal>
+	<cilinder_inhoud>1984</cilinder_inhoud>
+	<vermogen_motor_kw>96</vermogen_motor_kw>
+	<vermogen_motor_pk>131</vermogen_motor_pk>
+	<aantal_zitplaatsen>5</aantal_zitplaatsen>
+	<bpm_bedrag>9991</bpm_bedrag>
+	<interieurkleur/>
+	<bekleding>Stof</bekleding>
+	<aantal_sleutels>2</aantal_sleutels>
+	<aantal_handzenders>2</aantal_handzenders>
+	<code_pas_sleutel/>
+	<nap_weblabel>n</nap_weblabel>
+	<onderhoudsboekjes>dealer</onderhoudsboekjes>
+	<locatie_voertuig/>
+	<exportprijs>9950</exportprijs>
+	<meeneemprijs/>
+	<opknapkosten/>
+	<kosten_rijklaar>0</kosten_rijklaar>
+	<gemiddeld_verbruik>8.1</gemiddeld_verbruik>
+	<schadevoertuig>n</schadevoertuig>
+	<consignatie>n</consignatie>
+	<demovoertuig>n</demovoertuig>
+	<wielbasis>265</wielbasis>
+	<laadvermogen>575</laadvermogen>
+	<gvw>2000</gvw>
+	<aantal_assen/>
+	<lengte>468</lengte>
+	<breedte>177</breedte>
+	<hoogte>148</hoogte>
+	<vin>WAUZZZ8E68A119773</vin>
+	<emissieklasse>4</emissieklasse>
+	<energielabel>D</energielabel>
+	<volautomatisch/>
+	<voortbeweging_zelfstandig/>
+	<verplaatsing>mobiel</verplaatsing>
+	<bediening/>
+	<generatorvermogen/>
+	<compressorsoort/>
+	<doorvoercapaciteit/>
+	<maximale_reikwijdte/>
+	<voedingsspanning/>
+	<mastlengte/>
+	<bovenarmlengte/>
+	<rupsbandbreedte/>
+	<laadschopinhoud/>
+	<minimale_koeltemperatuur/>
+	<maximale_koeltemperatuur/>
+	<toepassingsmateriaal/>
+	<ce_markering>n</ce_markering>
+	<staat_algemeen/>
+	<staat_technisch/>
+	<staat_optisch/>
+	<nieuwprijs>39994</nieuwprijs>
+	<netto_catalogusprijs>25213</netto_catalogusprijs>
+	<fiscale_waarde/>
+	<bijtelling_pct>25</bijtelling_pct>
+	<verkocht_datum/>
+	<eigen_garantielabel></eigen_garantielabel>
+	<verlengd></verlengd>
+	<verhoogd></verhoogd>
+	<assen_aangedreven/>
+	<datum_binnenkomst>13-01-2017</datum_binnenkomst>
+	<verhuur>n</verhuur>
+	<klassieker>n</klassieker>
+	<aantal_eigenaren/>
+	<meldcode/>
+	<land>nl</land>
+	<topsnelheid>202</topsnelheid>
+	<tankinhoud>70</tankinhoud>
+	<actieradius/>
+	<max_trekgewicht_ongeremd>750</max_trekgewicht_ongeremd>
+	<acceleratie>10.0</acceleratie>
+	<max_dakbelasting/>
+	<inhoud_laadruimte_banken_weggeklapt/>
+	<verbruik_stad>11.1</verbruik_stad>
+	<verbruik_snelweg>6.4</verbruik_snelweg>
+	<co2_uitstoot>194</co2_uitstoot>
+	<fijnstof_uitstoot/>
+	<munteenheid>EUR</munteenheid>
+	<fabrieksgarantie_tot/>
+	<merkgarantie/>
+	<autotrust_garantie>n</autotrust_garantie>
+	<bovag_garantie/>
+	<garantie_maanden/>
+	<garantie_km/>
+	<opmerkingen_garantie/>
+	<opmerkingen>U bent van harte welkom in onze nieuwe showroom te Oisterwijk. Met het diverse aanbod en de scherpe meeneempijzen staat hier altijd de juiste auto bij! Inruil is bij ons altijd mogelijk! Ondanks zorgvuldige ingave zijn specificaties en leverbaarheid voorbehouden. Autonexxt BV, Bedrijfsweg 19, 5061 JX te Oisterwijk, Tel 013-7620750, info@autonexxt.nl, www.autonexxt.nl!</opmerkingen>
+	<opmerkingen_engels/>
+	<opmerkingen_duits/>
+	<opmerkingen_frans/>
+	<opmerkingen_spaans/>
+	<opmerkingen_portugees/>
+	<opmerkingen_italiaans/>
+	<opmerkingen_grieks/>
+	<opmerkingen_russisch/>
+	<opmerkingen_roemeens/>
+	<opmerkingen_hongaars/>
+	<opmerkingen_pools/>
+	<opmerkingen_tsjechisch/>
+	<opmerkingen_bulgaars/>
+	<opmerkingen_kroatisch/>
+	<opmerkingen_handel/>
+	<opmerkingen_handel_engels/>
+	<opmerkingen_handel_duits/>
+	<opmerkingen_handel_frans/>
+	<opmerkingen_handel_spaans/>
+	<opmerkingen_handel_portugees/>
+	<opmerkingen_handel_italiaans/>
+	<opmerkingen_handel_grieks/>
+	<opmerkingen_handel_russisch/>
+	<opmerkingen_handel_roemeens/>
+	<opmerkingen_handel_hongaars/>
+	<opmerkingen_handel_pools/>
+	<opmerkingen_handel_tsjechisch/>
+	<opmerkingen_handel_bulgaars/>
+	<opmerkingen_handel_kroatisch/>
+	<titel></titel>
+	<titel_engels></titel_engels>
+	<titel_duits></titel_duits>
+	<titel_frans></titel_frans>
+	<titel_spaans></titel_spaans>
+	<titel_portugees></titel_portugees>
+	<titel_italiaans></titel_italiaans>
+	<titel_grieks></titel_grieks>
+	<titel_russisch></titel_russisch>
+	<titel_roemeens></titel_roemeens>
+	<titel_hongaars></titel_hongaars>
+	<titel_pools></titel_pools>
+	<titel_tsjechisch></titel_tsjechisch>
+	<titel_bulgaars></titel_bulgaars>
+	<titel_kroatisch></titel_kroatisch>
+	<highlights></highlights>
+	<highlights_engels></highlights_engels>
+	<highlights_duits></highlights_duits>
+	<highlights_frans></highlights_frans>
+	<highlights_spaans></highlights_spaans>
+	<highlights_portugees></highlights_portugees>
+	<highlights_italiaans></highlights_italiaans>
+	<highlights_grieks></highlights_grieks>
+	<highlights_russisch></highlights_russisch>
+	<highlights_roemeens></highlights_roemeens>
+	<highlights_hongaars></highlights_hongaars>
+	<highlights_pools></highlights_pools>
+	<highlights_tsjechisch></highlights_tsjechisch>
+	<highlights_bulgaars></highlights_bulgaars>
+	<highlights_kroatisch></highlights_kroatisch>
+	<wegenbelasting_kwartaal min="181.00" max="204.00"></wegenbelasting_kwartaal>
+	<verkocht>n</verkocht>
+	<verwacht>n</verwacht>
+	<gereserveerd>n</gereserveerd>
+	<accessoires>
+		<accessoire>* DE SCHERPE INTERNET MEENEEMPRIJS</accessoire>
+		<accessoire>* In zeer goede staat</accessoire>
+		<accessoire>Achterbank in delen neerklapbaar</accessoire>
+		<accessoire>Airbag bestuurder en passagier</accessoire>
+		<accessoire>Airco (automatisch)</accessoire>
+		<accessoire>Alarm klasse 3</accessoire>
+		<accessoire>Audio-navigatiesysteem</accessoire>
+		<accessoire>Autotelefoon voorbereiding</accessoire>
+		<accessoire>Binnenspiegel aut.dimmend</accessoire>
+		<accessoire>Boordcomputer</accessoire>
+		<accessoire>Bumpers in carrosseriekleur</accessoire>
+		<accessoire>Cd-wisselaar</accessoire>
+		<accessoire>Centrale deurvergrendeling afstandbediend</accessoire>
+		<accessoire>Climate control</accessoire>
+		<accessoire>Cruise control</accessoire>
+		<accessoire>Dakrail</accessoire>
+		<accessoire>Elektrisch bedienbare ramen achter</accessoire>
+		<accessoire>Elektrisch bedienbare ramen voor</accessoire>
+		<accessoire>Lederen stuurwiel</accessoire>
+		<accessoire>Lichtmetalen wielen</accessoire>
+		<accessoire>Metallic lak</accessoire>
+		<accessoire>Middenarmsteun voor</accessoire>
+		<accessoire>Parkeersensoren achter</accessoire>
+		<accessoire>Regensensor</accessoire>
+		<accessoire>Stuurbekrachtiging</accessoire>
+		<accessoire>Stuurbekrachtiging snelheidsafhankelijk</accessoire>
+		<accessoire>Trekhaak met afneembare kogel</accessoire>
+	</accessoires>
+	<accessoiregroepen>
+		<accessoiregroep naam="Exterieur">
+			<accessoire>Bumpers in carrosseriekleur</accessoire>
+			<accessoire>Centrale deurvergrendeling afstandbediend</accessoire>
+			<accessoire>Dakrail</accessoire>
+			<accessoire>Lichtmetalen wielen</accessoire>
+			<accessoire>Metallic lak</accessoire>
+			<accessoire>Parkeersensoren achter</accessoire>
+			<accessoire>Regensensor</accessoire>
+			<accessoire>Trekhaak met afneembare kogel</accessoire>
+		</accessoiregroep>
+		<accessoiregroep naam="Infotainment">
+			<accessoire>Audio-navigatiesysteem</accessoire>
+			<accessoire>Autotelefoon voorbereiding</accessoire>
+			<accessoire>Cd-wisselaar</accessoire>
+		</accessoiregroep>
+		<accessoiregroep naam="Interieur">
+			<accessoire>Achterbank in delen neerklapbaar</accessoire>
+			<accessoire>Airco (automatisch)</accessoire>
+			<accessoire>Boordcomputer</accessoire>
+			<accessoire>Climate control</accessoire>
+			<accessoire>Cruise control</accessoire>
+			<accessoire>Elektrisch bedienbare ramen achter</accessoire>
+			<accessoire>Elektrisch bedienbare ramen voor</accessoire>
+			<accessoire>Lederen stuurwiel</accessoire>
+			<accessoire>Middenarmsteun voor</accessoire>
+			<accessoire>Stuurbekrachtiging</accessoire>
+			<accessoire>Stuurbekrachtiging snelheidsafhankelijk</accessoire>
+		</accessoiregroep>
+		<accessoiregroep naam="Veiligheid">
+			<accessoire>Airbag bestuurder en passagier</accessoire>
+			<accessoire>Alarm klasse 3</accessoire>
+			<accessoire>Binnenspiegel aut.dimmend</accessoire>
+		</accessoiregroep>
+		<accessoiregroep naam="Overige">
+			<accessoire>* DE SCHERPE INTERNET MEENEEMPRIJS</accessoire>
+			<accessoire>* In zeer goede staat</accessoire>
+		</accessoiregroep>
+	</accessoiregroepen>
+	<zoekaccessoires>
+		<accessoire>Achterbank in delen neerklapbaar</accessoire>
+		<accessoire>Airbags voor</accessoire>
+		<accessoire>Airconditioning</accessoire>
+		<accessoire>Alarmsysteem klasse III</accessoire>
+		<accessoire>Automatisch dimmende binnenspiegel</accessoire>
+		<accessoire>Boordcomputer</accessoire>
+		<accessoire>Bumpers in carrosseriekleur</accessoire>
+		<accessoire>CD-wisselaar</accessoire>
+		<accessoire>Centrale deurvergrendeling afstandbediend</accessoire>
+		<accessoire>Climate control</accessoire>
+		<accessoire>Cruise control</accessoire>
+		<accessoire>Dakrails</accessoire>
+		<accessoire>Elektrisch bedienbare ramen achter</accessoire>
+		<accessoire>Elektrisch bedienbare ramen voor</accessoire>
+		<accessoire>Lederen stuurwiel</accessoire>
+		<accessoire>Lichtmetalen wielen</accessoire>
+		<accessoire>Metallic lak</accessoire>
+		<accessoire>Middenarmsteun voor</accessoire>
+		<accessoire>Navigatiesysteem</accessoire>
+		<accessoire>Parkeersensoren achter</accessoire>
+		<accessoire>Radio</accessoire>
+		<accessoire>Regensensor</accessoire>
+		<accessoire>Snelheidsafhankelijke stuurbekrachtiging</accessoire>
+		<accessoire>Stuurbekrachtiging</accessoire>
+		<accessoire>Telefoonvoorbereiding</accessoire>
+		<accessoire>Trekhaak met afneembare kogel</accessoire>
+	</zoekaccessoires>
+	<schade>
+		<status/>
+		<opmerkingen/>
+		<beschadigingen/>
+		<defecte_onderdelen/>
+	</schade>
+	<afbeeldingen>
+		<afbeelding nr="1">http://images0.doorlinkenvoorraad.nl/s1484321296/13277908-1-2-3.jpg?do_not_embed</afbeelding>
+		<afbeelding nr="2">http://images0.doorlinkenvoorraad.nl/s1484321296/13277908-2-2-3.jpg?do_not_embed</afbeelding>
+		<afbeelding nr="3">http://images0.doorlinkenvoorraad.nl/s1484321297/13277908-3-2-3.jpg?do_not_embed</afbeelding>
+		<afbeelding nr="4">http://images0.doorlinkenvoorraad.nl/s1484321297/13277908-4-2-3.jpg?do_not_embed</afbeelding>
+		<afbeelding nr="5">http://images0.doorlinkenvoorraad.nl/s1484321297/13277908-5-2-3.jpg?do_not_embed</afbeelding>
+		<afbeelding nr="6">http://images0.doorlinkenvoorraad.nl/s1484321297/13277908-6-2-3.jpg?do_not_embed</afbeelding>
+		<afbeelding nr="7">http://images0.doorlinkenvoorraad.nl/s1484321297/13277908-7-2-3.jpg?do_not_embed</afbeelding>
+		<afbeelding nr="8">http://images0.doorlinkenvoorraad.nl/s1484321298/13277908-8-2-3.jpg?do_not_embed</afbeelding>
+		<afbeelding nr="9">http://images0.doorlinkenvoorraad.nl/s1484321298/13277908-9-2-3.jpg?do_not_embed</afbeelding>
+		<afbeelding nr="10">http://images0.doorlinkenvoorraad.nl/s1484321298/13277908-10-2-3.jpg?do_not_embed</afbeelding>
+		<afbeelding nr="11">http://images0.doorlinkenvoorraad.nl/s1484321298/13277908-11-2-3.jpg?do_not_embed</afbeelding>
+		<afbeelding nr="12">http://images0.doorlinkenvoorraad.nl/s1484321299/13277908-12-2-3.jpg?do_not_embed</afbeelding>
+		<afbeelding nr="13">http://images0.doorlinkenvoorraad.nl/s1484321299/13277908-13-2-3.jpg?do_not_embed</afbeelding>
+		<afbeelding nr="14">http://images0.doorlinkenvoorraad.nl/s1484321299/13277908-14-2-3.jpg?do_not_embed</afbeelding>
+		<afbeelding nr="15">http://images0.doorlinkenvoorraad.nl/s1484321299/13277908-15-2-3.jpg?do_not_embed</afbeelding>
+		<afbeelding nr="16">http://images0.doorlinkenvoorraad.nl/s1484321299/13277908-16-2-3.jpg?do_not_embed</afbeelding>
+		<afbeelding nr="17">http://images0.doorlinkenvoorraad.nl/s1484321300/13277908-17-2-3.jpg?do_not_embed</afbeelding>
+		<afbeelding nr="18">http://images0.doorlinkenvoorraad.nl/s1484321300/13277908-18-2-3.jpg?do_not_embed</afbeelding>
+		<afbeelding nr="19">http://images0.doorlinkenvoorraad.nl/s1484321300/13277908-19-2-3.jpg?do_not_embed</afbeelding>
+		<afbeelding nr="20">http://images0.doorlinkenvoorraad.nl/s1484321300/13277908-20-2-3.jpg?do_not_embed</afbeelding>
+		<afbeelding nr="21">http://images0.doorlinkenvoorraad.nl/s1484321300/13277908-21-2-3.jpg?do_not_embed</afbeelding>
+		<afbeelding nr="22">http://images0.doorlinkenvoorraad.nl/s1484321300/13277908-22-2-3.jpg?do_not_embed</afbeelding>
+		<afbeelding nr="23">http://images0.doorlinkenvoorraad.nl/s1484321301/13277908-23-2-3.jpg?do_not_embed</afbeelding>
+	</afbeeldingen>
+	<videos>
+		<video>
+			<url>https://www.youtube.com/watch?v=ujcJbYYi6D0</url>
+			<thumbnail>https://img.youtube.com/vi/ujcJbYYi6D0/default.jpg</thumbnail>
+			<embedCode><![CDATA[<object width="400" height="300"><param name="movie" value="https://www.youtube.com/v/ujcJbYYi6D0?fs=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><param name="wmode" value="transparent"></param><embed src="https://www.youtube.com/v/ujcJbYYi6D0?fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="400" height="300" wmode="transparent"></embed></object>]]></embedCode>
+		</video>
+		<video>
+			<url>https://www.taggle.nl/2596885/</url>
+			<thumbnail>https://taggleauto.movieplayer.nl/2596885/image.jpg/thumb/</thumbnail>
+			<embedCode><![CDATA[<iframe src="//taggleauto.movieplayer.nl/tg/2596885/?width=640&height=360" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>]]></embedCode>
+		</video>
+	</videos>
+	<documenten/>
+</voertuig>

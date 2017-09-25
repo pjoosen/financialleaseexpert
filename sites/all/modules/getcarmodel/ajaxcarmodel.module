@@ -1,0 +1,75 @@
+<?php
+
+/**
+ * Implements hook_menu().
+ */
+function ajaxcarmodel_menu() {
+  $items = array();
+ 
+  $items['ajax-model'] = array(
+    'title' => 'Ajax Model',
+    'type' => MENU_NORMAL_ITEM,
+    'page callback' => 'ajaxcarmodel_page',
+    'access arguments' => array('access content'),
+  );
+ 
+  $items['get-model/%/%'] = array(
+    'title' => 'Ajax model callback',
+    'type' => MENU_CALLBACK,
+    'page callback' => 'ajaxcarmodel_callback',
+    'page arguments' => array(1,2),
+    'access arguments' => array('access content'),
+  );
+ 
+  return $items;
+}
+
+/**
+ * Callback function that displays a simple Ajax powered link.
+ */
+function ajaxcarmodel_page() {
+  return array(
+    '#type' => 'link',
+    '#title' => t('Ajax Link'),
+    '#href' => 'get-model/nojs/'.rand(),
+    '#prefix' => '<div id="ajax-link">',
+    '#suffix' => '</div><div id="ajax-display"></div>',
+    '#ajax' => array(
+      'effect' => 'fade',
+    ),
+  );
+}
+
+
+/**
+ * Ajax callback to display the current time.
+ */
+function ajaxcarmodel_callback($ajax,$brand) {
+ 
+  if ($ajax == 'ajax') {
+    
+   	//$sql = "SELECT DISTINCT model.word FROM search_api_db_node_index_field_merk as merk,search_api_db_node_index_field_model as model WHERE merk.word = '" . addslashes($brand) . "' AND merk.item_id = model.item_id ORDER BY model.word ASC";
+	$sql = "SELECT DISTINCT field_model FROM search_api_db_node_index WHERE field_merk = '" . addslashes($brand) . "' AND type='auto' ORDER BY field_model ASC";
+	
+	$result = db_query($sql);
+	
+	$models = $result->fetchAll();
+	
+	$options = "<option value='All'>" . t('Selecteer model') . "</option>";
+	foreach ($models as $model) {
+	     $options .= "<option value='" . $model->field_model . "'>" . $model->field_model ."</option>";
+	}
+	
+	echo $options;
+	
+	
+  }
+  else {
+    // No ajax, just display the time on a page using renderable array.
+    return array(
+      '#markup' => $time,
+    );
+  }
+}
+ 
+  

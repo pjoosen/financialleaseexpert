@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<voertuig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://eigenwebsite.doorlinkenvoorraad.nl/docs/2.9/voertuig.xsd" actie="add" versie="2.9">
+	<voertuignr_hexon>334422</voertuignr_hexon>
+	<voertuignr>0000010</voertuignr>
+	<voertuignr_klant></voertuignr_klant>
+	<klantnummer>32491</klantnummer>
+	<kenteken>72ZNLT</kenteken>
+	<merk>Opel</merk>
+	<model>Astra</model>
+	<type>1.8 TWINTOP / AIRCO-ECC / HALF-LEDER / LMV / CRUISE</type>
+	<voertuigsoort>AUTO</voertuigsoort>
+	<carrosserie>Cabriolet</carrosserie>
+	<aantal_deuren>2</aantal_deuren>
+	<tellerstand eenheid="K">45244</tellerstand>
+	<brandstof>B</brandstof>
+	<transmissie>H</transmissie>
+	<aantal_versnellingen>5</aantal_versnellingen>
+	<btw_marge>M</btw_marge>
+	<nieuw_voertuig>n</nieuw_voertuig>
+	<laktint></laktint>
+	<kleur></kleur>
+	<basiskleur>grijs</basiskleur>
+	<laksoort>metallic</laksoort>
+	<bouwjaar>2008</bouwjaar>
+	<datum_deel_1>31-03-2008</datum_deel_1>
+	<datum_deel_1a>31-03-2008</datum_deel_1a>
+	<datum_deel_1b>02-12-2013</datum_deel_1b>
+	<verkoopprijs_particulier bpm="in">12795</verkoopprijs_particulier>
+	<actieprijs></actieprijs>
+	<verkoopprijs_handel></verkoopprijs_handel>
+	<apk tot="11-01-2015" bij_aflevering="n"></apk>
+	<massa>1400</massa>
+	<max_trekgewicht>1200</max_trekgewicht>
+	<cilinder_aantal>4</cilinder_aantal>
+	<cilinder_inhoud>1796</cilinder_inhoud>
+	<vermogen_motor_kw>103</vermogen_motor_kw>
+	<vermogen_motor_pk>140</vermogen_motor_pk>
+	<aantal_zitplaatsen>4</aantal_zitplaatsen>
+	<bpm_bedrag>8091</bpm_bedrag>
+	<interieurkleur></interieurkleur>
+	<bekleding></bekleding>
+	<aantal_sleutels>1</aantal_sleutels>
+	<aantal_handzenders>1</aantal_handzenders>
+	<code_pas_sleutel></code_pas_sleutel>
+	<nap_weblabel>n</nap_weblabel>
+	<onderhoudsboekjes></onderhoudsboekjes>
+	<locatie_voertuig></locatie_voertuig>
+	<exportprijs></exportprijs>
+	<meeneemprijs></meeneemprijs>
+	<opknapkosten>0</opknapkosten>
+	<kosten_rijklaar>0</kosten_rijklaar>
+	<gemiddeld_verbruik>7.7</gemiddeld_verbruik>
+	<schadevoertuig>n</schadevoertuig>
+	<consignatie>n</consignatie>
+	<demovoertuig>n</demovoertuig>
+	<wielbasis></wielbasis>
+	<laadvermogen></laadvermogen>
+	<gvw></gvw>
+	<aantal_assen></aantal_assen>
+	<lengte></lengte>
+	<breedte></breedte>
+	<hoogte></hoogte>
+	<vin></vin>
+	<emissieklasse>0</emissieklasse>
+	<energielabel>D</energielabel>
+	<volautomatisch></volautomatisch>
+	<voortbeweging_zelfstandig></voortbeweging_zelfstandig>
+	<verplaatsing></verplaatsing>
+	<bediening></bediening>
+	<generatorvermogen></generatorvermogen>
+	<compressorsoort></compressorsoort>
+	<doorvoercapaciteit></doorvoercapaciteit>
+	<maximale_reikwijdte></maximale_reikwijdte>
+	<voedingsspanning></voedingsspanning>
+	<mastlengte></mastlengte>
+	<bovenarmlengte></bovenarmlengte>
+	<rupsbandbreedte></rupsbandbreedte>
+	<laadschopinhoud></laadschopinhoud>
+	<minimale_koeltemperatuur></minimale_koeltemperatuur>
+	<maximale_koeltemperatuur></maximale_koeltemperatuur>
+	<toepassingsmateriaal></toepassingsmateriaal>
+	<ce_markering></ce_markering>
+	<staat_algemeen></staat_algemeen>
+	<staat_technisch></staat_technisch>
+	<staat_optisch></staat_optisch>
+	<lease>
+		<contract>voorbeeld</contract>
+		<leasevorm></leasevorm>
+		<leasevorm_naam></leasevorm_naam>
+		<beschikbaar_per></beschikbaar_per>
+		<looptijd></looptijd>
+		<maandbedrag></maandbedrag>
+		<aantal_km_per_jaar></aantal_km_per_jaar>
+		<prijs_per_extra_km></prijs_per_extra_km>
+		<korting_per_km_minder></korting_per_km_minder>
+		<overname_mogelijk></overname_mogelijk>
+		<borg></borg>
+		<opmerkingen></opmerkingen>
+	</lease>
+	<nieuwprijs></nieuwprijs>
+	<netto_catalogusprijs></netto_catalogusprijs>
+	<fiscale_waarde></fiscale_waarde>
+	<bijtelling_pct></bijtelling_pct>
+	<verkocht_datum></verkocht_datum>
+	<eigen_garantielabel>Geen</eigen_garantielabel>
+	<verlengd></verlengd>
+	<verhoogd></verhoogd>
+	<assen_aangedreven></assen_aangedreven>
+	<datum_binnenkomst>06-12-2013</datum_binnenkomst>
+	<verhuur>n</verhuur>
+	<klassieker>n</klassieker>
+	<aantal_eigenaren></aantal_eigenaren>
+	<meldcode></meldcode>
+	<land>nl</land>
+	<topsnelheid>209</topsnelheid>
+	<tankinhoud></tankinhoud>
+	<actieradius></actieradius>
+	<max_trekgewicht_ongeremd>750</max_trekgewicht_ongeremd>
+	<acceleratie>11.4</acceleratie>
+	<max_dakbelasting></max_dakbelasting>
+	<inhoud_laadruimte_banken_weggeklapt></inhoud_laadruimte_banken_weggeklapt>
+	<verbruik_stad>10.3</verbruik_stad>
+	<verbruik_snelweg>6.2</verbruik_snelweg>
+	<co2_uitstoot></co2_uitstoot>
+	<fijnstof_uitstoot></fijnstof_uitstoot>
+	<munteenheid>EUR</munteenheid>
+	<fabrieksgarantie_tot></fabrieksgarantie_tot>
+	<merkgarantie></merkgarantie>
+	<autotrust_garantie>n</autotrust_garantie>
+	<bovag_garantie>0</bovag_garantie>
+	<garantie_maanden>0</garantie_maanden>
+	<garantie_km></garantie_km>
+	<opmerkingen_garantie></opmerkingen_garantie>
+	<opmerkingen>Geen opmerkingen</opmerkingen>
+	<opmerkingen_engels></opmerkingen_engels>
+	<opmerkingen_duits></opmerkingen_duits>
+	<opmerkingen_frans></opmerkingen_frans>
+	<opmerkingen_spaans></opmerkingen_spaans>
+	<opmerkingen_portugees></opmerkingen_portugees>
+	<opmerkingen_italiaans></opmerkingen_italiaans>
+	<opmerkingen_grieks></opmerkingen_grieks>
+	<opmerkingen_russisch></opmerkingen_russisch>
+	<opmerkingen_roemeens></opmerkingen_roemeens>
+	<opmerkingen_hongaars></opmerkingen_hongaars>
+	<opmerkingen_pools></opmerkingen_pools>
+	<opmerkingen_tsjechisch></opmerkingen_tsjechisch>
+	<opmerkingen_bulgaars></opmerkingen_bulgaars>
+	<opmerkingen_kroatisch></opmerkingen_kroatisch>
+	<opmerkingen_handel></opmerkingen_handel>
+	<opmerkingen_handel_engels></opmerkingen_handel_engels>
+	<opmerkingen_handel_duits></opmerkingen_handel_duits>
+	<opmerkingen_handel_frans></opmerkingen_handel_frans>
+	<opmerkingen_handel_spaans></opmerkingen_handel_spaans>
+	<opmerkingen_handel_portugees></opmerkingen_handel_portugees>
+	<opmerkingen_handel_italiaans></opmerkingen_handel_italiaans>
+	<opmerkingen_handel_grieks></opmerkingen_handel_grieks>
+	<opmerkingen_handel_russisch></opmerkingen_handel_russisch>
+	<opmerkingen_handel_roemeens></opmerkingen_handel_roemeens>
+	<opmerkingen_handel_hongaars></opmerkingen_handel_hongaars>
+	<opmerkingen_handel_pools></opmerkingen_handel_pools>
+	<opmerkingen_handel_tsjechisch></opmerkingen_handel_tsjechisch>
+	<opmerkingen_handel_bulgaars></opmerkingen_handel_bulgaars>
+	<opmerkingen_handel_kroatisch></opmerkingen_handel_kroatisch>
+	<titel></titel>
+	<titel_engels></titel_engels>
+	<titel_duits></titel_duits>
+	<titel_frans></titel_frans>
+	<titel_spaans></titel_spaans>
+	<titel_portugees></titel_portugees>
+	<titel_italiaans></titel_italiaans>
+	<titel_grieks></titel_grieks>
+	<titel_russisch></titel_russisch>
+	<titel_roemeens></titel_roemeens>
+	<titel_hongaars></titel_hongaars>
+	<titel_pools></titel_pools>
+	<titel_tsjechisch></titel_tsjechisch>
+	<titel_bulgaars></titel_bulgaars>
+	<titel_kroatisch></titel_kroatisch>
+	<highlights></highlights>
+	<highlights_engels></highlights_engels>
+	<highlights_duits></highlights_duits>
+	<highlights_frans></highlights_frans>
+	<highlights_spaans></highlights_spaans>
+	<highlights_portugees></highlights_portugees>
+	<highlights_italiaans></highlights_italiaans>
+	<highlights_grieks></highlights_grieks>
+	<highlights_russisch></highlights_russisch>
+	<highlights_roemeens></highlights_roemeens>
+	<highlights_hongaars></highlights_hongaars>
+	<highlights_pools></highlights_pools>
+	<highlights_tsjechisch></highlights_tsjechisch>
+	<highlights_bulgaars></highlights_bulgaars>
+	<highlights_kroatisch></highlights_kroatisch>
+	<wegenbelasting_kwartaal min="178.00" max="203.00"></wegenbelasting_kwartaal>
+	<verkocht>n</verkocht>
+	<verwacht>n</verwacht>
+	<gereserveerd>n</gereserveerd>
+	<accessoires>
+		<accessoire>*Dit is de scherpe meeneemprijs</accessoire>
+		<accessoire>3e remlicht</accessoire>
+		<accessoire>4 Elektrische ramen</accessoire>
+		<accessoire>ABS (anti blokkeer systeem)</accessoire>
+		<accessoire>Airbag</accessoire>
+		<accessoire>Airbags</accessoire>
+		<accessoire>Airco</accessoire>
+		<accessoire>Armsteun achter</accessoire>
+		<accessoire>Armsteun voor</accessoire>
+		<accessoire>Audiobediening op stuur</accessoire>
+		<accessoire>Bekleding half leder half stof</accessoire>
+		<accessoire>Binnenspiegel automatisch dimmend</accessoire>
+		<accessoire>Boordcomputer</accessoire>
+		<accessoire>Buitenspiegels elektrisch verstelbaar</accessoire>
+		<accessoire>Buitenspiegels in carrosseriekleur</accessoire>
+		<accessoire>Bumpers in carrosseriekleur</accessoire>
+		<accessoire>Centrale deurvergendeling met afstandsbediening</accessoire>
+		<accessoire>Cruise control</accessoire>
+		<accessoire>ECC (electronic climate control)</accessoire>
+		<accessoire>Glas getint</accessoire>
+		<accessoire>Hoofdsteunen achter</accessoire>
+		<accessoire>Hoogte verstelbare stoel ( en )</accessoire>
+		<accessoire>Isofix</accessoire>
+		<accessoire>Koplamp in hoogte verstelbaar</accessoire>
+		<accessoire>Koplampsproeiers</accessoire>
+		<accessoire>Leder stuur/pook</accessoire>
+		<accessoire>Lendensteun stoel</accessoire>
+		<accessoire>Lichtmetalen velgen 17 inch</accessoire>
+		<accessoire>Lichtsensor</accessoire>
+		<accessoire>Metallic lak</accessoire>
+		<accessoire>Mistlampen voor</accessoire>
+		<accessoire>Radio-cd speler</accessoire>
+		<accessoire>Regensensor</accessoire>
+		<accessoire>Startonderbreker</accessoire>
+		<accessoire>Stuurbekrachtiging</accessoire>
+		<accessoire>Stuur verstelbaar</accessoire>
+		<accessoire>Traction controll</accessoire>
+		<accessoire>Zeer mooie auto</accessoire>
+		<accessoire>Zij airbags</accessoire>
+	</accessoires>
+	<accessoiregroepen>
+		<accessoiregroep naam="Exterieur">
+			<accessoire>Lichtmetalen velgen 17 inch</accessoire>
+			<accessoire>Buitenspiegels elektrisch verstelbaar</accessoire>
+			<accessoire>Buitenspiegels in carrosseriekleur</accessoire>
+			<accessoire>Glas getint</accessoire>
+			<accessoire>Metallic lak</accessoire>
+		</accessoiregroep>
+		<accessoiregroep naam="Infotainment">
+			<accessoire>Radio-cd speler</accessoire>
+			<accessoire>Audiobediening op stuur</accessoire>
+		</accessoiregroep>
+		<accessoiregroep naam="Interieur">
+			<accessoire>Hoogte verstelbare stoel ( en )</accessoire>
+			<accessoire>Leder stuur/pook</accessoire>
+			<accessoire>Lendensteun stoel</accessoire>
+			<accessoire>4 Elektrische ramen</accessoire>
+			<accessoire>Airco</accessoire>
+			<accessoire>Armsteun achter</accessoire>
+			<accessoire>Armsteun voor</accessoire>
+			<accessoire>Binnenspiegel automatisch dimmend</accessoire>
+			<accessoire>Boordcomputer</accessoire>
+			<accessoire>Cruise control</accessoire>
+			<accessoire>ECC (electronic climate control)</accessoire>
+			<accessoire>Regensensor</accessoire>
+			<accessoire>Stuurbekrachtiging</accessoire>
+		</accessoiregroep>
+		<accessoiregroep naam="Veiligheid">
+			<accessoire>ABS (anti blokkeer systeem)</accessoire>
+			<accessoire>Hoofdsteunen achter</accessoire>
+			<accessoire>Isofix</accessoire>
+			<accessoire>Koplamp in hoogte verstelbaar</accessoire>
+			<accessoire>Koplampsproeiers</accessoire>
+			<accessoire>Traction controll</accessoire>
+			<accessoire>Zij airbags</accessoire>
+			<accessoire>Startonderbreker</accessoire>
+			<accessoire>Airbag</accessoire>
+			<accessoire>Airbags</accessoire>
+			<accessoire>Mistlampen voor</accessoire>
+			<accessoire>3e remlicht</accessoire>
+		</accessoiregroep>
+		<accessoiregroep naam="Overige">
+			<accessoire>Bumpers in carrosseriekleur</accessoire>
+			<accessoire>Centrale deurvergendeling met afstandsbediening</accessoire>
+			<accessoire>Lichtsensor</accessoire>
+			<accessoire>Zeer mooie auto</accessoire>
+			<accessoire>Bekleding half leder half stof</accessoire>
+			<accessoire>*Dit is de scherpe meeneemprijs</accessoire>
+			<accessoire>Stuur verstelbaar</accessoire>
+		</accessoiregroep>
+	</accessoiregroepen>
+	<zoekaccessoires>
+		<accessoire>Antiblokkeersysteem</accessoire>
+		<accessoire>Airbag bestuurder</accessoire>
+		<accessoire>Zij-airbags</accessoire>
+		<accessoire>Airconditioning</accessoire>
+		<accessoire>Stuurbekrachtiging</accessoire>
+		<accessoire>Mistlampen voor</accessoire>
+		<accessoire>Radio/CD speler</accessoire>
+		<accessoire>Automatisch dimmende binnenspiegel</accessoire>
+		<accessoire>Derde remlicht</accessoire>
+		<accessoire>Elektrisch verstelbare buitenspiegels</accessoire>
+		<accessoire>Boordcomputer</accessoire>
+		<accessoire>Cruise control</accessoire>
+		<accessoire>Centrale deurvergrendeling afstandbediend</accessoire>
+		<accessoire>Startonderbreker</accessoire>
+		<accessoire>Climate control</accessoire>
+		<accessoire>Bumpers in carrosseriekleur</accessoire>
+		<accessoire>Getint glas</accessoire>
+		<accessoire>Hoofdsteunen achter</accessoire>
+		<accessoire>Metallic lak</accessoire>
+		<accessoire>Elektrisch bedienbare ramen voor en achter</accessoire>
+		<accessoire>Regensensor</accessoire>
+		<accessoire>Koplampsproeiers</accessoire>
+		<accessoire>Lichtmetalen wielen (17&quot;)</accessoire>
+		<accessoire>Airbags</accessoire>
+		<accessoire>Buitenspiegels in carrosseriekleur</accessoire>
+		<accessoire>Lederen stuurwiel</accessoire>
+		<accessoire>Audiobediening op het stuurwiel</accessoire>
+		<accessoire>Middenarmsteun achter</accessoire>
+		<accessoire>Middenarmsteun voor</accessoire>
+		<accessoire>Koplampen in hoogte verstelbaar</accessoire>
+		<accessoire>Lendesteun</accessoire>
+		<accessoire>Automatische dimlichten</accessoire>
+		<accessoire>Lederen versnellingspook</accessoire>
+		<accessoire>In hoogte verstelbare bestuurdersstoel</accessoire>
+		<accessoire>Verstelbaar stuurwiel</accessoire>
+	</zoekaccessoires>
+	<schade>
+		<status></status>
+		<opmerkingen></opmerkingen>
+		<beschadigingen/>
+		<defecte_onderdelen/>
+	</schade>
+	<afbeeldingen>
+		<afbeelding nr="1">http://images1.wheeler.nl/s1386324646/6934543-1-2-2.jpg</afbeelding>
+		<afbeelding nr="2">http://images1.wheeler.nl/s1386324647/6934543-2-2-2.jpg</afbeelding>
+		<afbeelding nr="3">http://images1.wheeler.nl/s1386324648/6934543-3-2-2.jpg</afbeelding>
+		<afbeelding nr="4">http://images1.wheeler.nl/s1386324648/6934543-4-2-2.jpg</afbeelding>
+		<afbeelding nr="5">http://images1.wheeler.nl/s1386324649/6934543-5-2-2.jpg</afbeelding>
+		<afbeelding nr="6">http://images1.wheeler.nl/s1386324650/6934543-6-2-2.jpg</afbeelding>
+		<afbeelding nr="7">http://images1.wheeler.nl/s1386324651/6934543-7-2-2.jpg</afbeelding>
+		<afbeelding nr="8">http://images1.wheeler.nl/s1386324652/6934543-8-2-2.jpg</afbeelding>
+		<afbeelding nr="9">http://images1.wheeler.nl/s1386324653/6934543-9-2-2.jpg</afbeelding>
+		<afbeelding nr="10">http://images1.wheeler.nl/s1386324654/6934543-10-2-2.jpg</afbeelding>
+		<afbeelding nr="11">http://images1.wheeler.nl/s1386324656/6934543-11-2-2.jpg</afbeelding>
+		<afbeelding nr="12">http://images1.wheeler.nl/s1386324657/6934543-12-2-2.jpg</afbeelding>
+	</afbeeldingen>
+	<videos/>
+	<documenten/>
+</voertuig>

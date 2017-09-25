@@ -1,0 +1,500 @@
+<?php
+
+/**
+ * Implements hook_menu().
+ */
+function xml_import_menu() {
+	$items = array();
+
+	$items['xml-import'] = array('title' => 'XML Import', 'type' => MENU_NORMAL_ITEM, 'page callback' => 'xml_import_page', 'access arguments' => array('access content'), );
+
+	return $items;
+}
+
+global $base;
+// local testing
+//$base = '/Library/WebServer/Documents/Sync/autonexxt/';
+
+//live site 
+$base = '/home/autonexx/public_html/autonexxt/';
+
+
+/**
+ * XML import callback function
+ */
+function xml_import_page() {
+	
+
+	//if($_SERVER['REMOTE_ADDR'] != '82.94.237.8' && $_SERVER['REMOTE_ADDR'] != '82.94.240.8') {
+	// Aanvraag komt niet van Hexon Server
+	//	exit;
+	//}
+	global $base;
+	
+	//get all cars and check if sold longer than 2wks ago 
+	checkSoldCars();
+	
+	//local testing
+	//$xml = simplexml_load_file( $base . 'sites/all/modules/xml_import/xml-add.xml', 'SimpleXMLElement', LIBXML_NOCDATA);
+	
+	//for live 
+	$xml = simplexml_load_file('php://input', 'SimpleXMLElement', LIBXML_NOCDATA);
+	
+	//echo "<pre>";
+	//print_r($xml);
+	
+	switch ($xml->attributes()->actie) {
+		case 'add' :
+			add_auto($xml);
+			break;
+		case 'change' :
+			change_auto($xml);
+			break;
+		case 'delete' :
+			delete_auto($xml);
+			break;
+		default :
+			break;
+	}
+	
+
+
+
+	//Reindex the Search DB
+	// Load Search API Index.
+	$search_api_index = search_api_index_load('node_index');
+	// Clear the index.
+	//$search_api_index -> clear();
+	// Run!
+	search_api_index_items($search_api_index, -1);
+	//$search_api_index->reindex();
+
+}
+
+function add_auto($xml) {
+		
+	//check if node exists
+	$query = new EntityFieldQuery();
+
+	$query -> entityCondition('entity_type', 'node', '=') -> fieldCondition('field_hexon_id', 'value', $xml -> voertuignr_hexon, '=') -> range(0, 1);
+
+	$result = $query -> execute();
+	if (!empty($result)) {
+		die('Duplicate Hexon ID');
+	}
+	//print_r ($result);
+
+
+	$node = new stdClass();
+	// Create a new node object
+	$node -> type = "auto";
+	// Or page, or whatever content type you like
+	node_object_prepare($node);
+	// Set some default values
+
+	//Add title
+	if (!empty($xml -> titel)) {
+		$node -> title = $xml -> titel;
+	} else {
+		$node -> title = $xml -> merk . " " . $xml -> model . " " . $xml -> type;
+	}
+	
+
+
+	//Add Hexon ID
+	$node -> field_hexon_id['und'][0]['value'] = $xml -> voertuignr_hexon;
+
+	//Add Kenteken
+
+	$node -> field_kenteken['und'][0]['value'] = $xml -> kenteken;
+
+	//Add merk
+	$node -> field_merk['und'][0]['value'] = ucfirst(cleanText($xml -> merk));
+
+	//Add model
+	$node -> field_model['und'][0]['value'] = cleanText($xml -> model);
+
+	//Add Carrosserie
+	$node -> field_carrosserie['und'][0]['value'] = $xml -> carrosserie;
+
+	//Add prijs
+	$node -> field_prijs['und'][0]['value'] = $xml -> verkoopprijs_particulier;
+
+	//Add handelsprijs
+	if (!empty($xml -> verkoopprijs_handel) && ($xml -> verkoopprijs_handel<>0))
+	{
+		$node -> field_verkoopprijs_handel['und'][0]['value'] = $xml -> verkoopprijs_handel;
+	}
+	else
+	{
+		$node -> field_verkoopprijs_handel['und'][0]['value'] = $xml -> verkoopprijs_particulier;	
+	}
+	
+	//Add exportprijs
+	if (!empty($xml -> exportprijs) && ($xml -> exportprijs<>0))
+	{
+		$node -> field_exportprijs['und'][0]['value'] = $xml -> exportprijs;
+	}
+	else 
+	{
+		$node -> field_exportprijs['und'][0]['value'] = $xml -> verkoopprijs_particulier;
+	}
+
+	//Add bouwjaar
+	if (!empty($xml -> bouwjaar))
+	{
+		$node -> field_bouwjaar['und'][0]['value'] = $xml -> bouwjaar;
+	}
+
+	//Add Transmissie
+	if (!empty($xml -> transmissie))
+	{
+		$node -> field_transmissie['und'][0]['value'] = $xml -> transmissie;
+	}
+
+	//Add Kilometer
+	if (!empty($xml -> tellerstand))
+	{
+		$node -> field_kilometerstand['und'][0]['value'] = $xml -> tellerstand;
+	}
+
+	//Add Brandstof
+	if (!empty($xml -> brandstof))
+	{
+		$node -> field_brandstof['und'][0]['value'] = $xml -> brandstof;
+	}
+	
+	//Add Voertuigsoort
+	if (!empty($xml -> voertuigsoort))
+	{
+		$node -> field_voertuigsoort['und'][0]['value'] = $xml -> voertuigsoort;
+	}
+
+	//Add BTW
+	if (!empty($xml -> btw_marge))
+	{
+		$node -> field_btw_marge['und'][0]['value'] = $xml -> btw_marge;
+	}
+
+	//Add Bovag
+	if (!empty($xml -> bovag_garantie))
+	{
+		$node -> field_bovag['und'][0]['value'] = $xml -> bovag_garantie;
+	}
+
+	//Add MND garantie
+	if (!empty($xml -> garantie_maanden))
+	{
+		$node -> field_mnd_garantie['und'][0]['value'] = $xml -> garantie_maanden;
+	}
+
+	//Add APK
+	if (!empty($xml -> apk[0]['tot']))
+	{
+		$node -> field_apk['und'][0]['value'] = $xml -> apk[0]['tot'];
+	}
+	
+	//Add APK (bij aflevering)
+	if (!empty($xml -> apk[0]['bij_aflevering']))
+	{
+		$node -> field_apk_aflevering['und'][0]['value'] = $xml -> apk[0]['bij_aflevering'];
+	}
+	
+	//Add Deuren
+	if (!empty($xml -> aantal_deuren))
+	{
+		$node -> field_deuren['und'][0]['value'] = $xml -> aantal_deuren;
+	}
+
+	//Add Cilinders
+	if (!empty($xml -> cilinder_aantal))
+	{
+		$node -> field_cilinder_aantal['und'][0]['value'] = $xml -> cilinder_aantal;
+	}
+
+	//Add Cilinder-inhoud
+	if (!empty($xml -> cilinder_inhoud))
+	{
+		$node -> field_cilinder_inhoud['und'][0]['value'] = $xml -> cilinder_inhoud;
+	}
+
+	//Add vermogen kW
+	if (!empty($xml -> vermogen_motor_kw))
+	{
+		$node -> field_vermogen_kw['und'][0]['value'] = $xml -> vermogen_motor_kw;
+	}
+	
+	//Add vermogen PK
+	if (!empty($xml -> vermogen_motor_pk))
+	{
+		$node -> field_vermogen_pk['und'][0]['value'] = $xml -> vermogen_motor_pk;
+	}
+
+	//Add Basiskleur
+	if (!empty($xml -> basiskleur))
+	{
+		$node -> field_basiskleur['und'][0]['value'] = $xml -> basiskleur;
+	}
+
+	//Add Laksoort
+	if (!empty($xml -> laksoort))
+	{
+		$node -> field_laksoort['und'][0]['value'] = $xml -> laksoort;
+	}
+
+	//Add Gewicht
+	if (!empty($xml -> massa))
+	{
+		$node -> field_gewicht['und'][0]['value'] = $xml -> massa;
+	}
+	
+	//Add wegenbelasting min
+	if (isset($xml -> wegenbelasting_kwartaal) && !empty($xml -> wegenbelasting_kwartaal->attributes()->min[0]))
+	{
+		$node -> field_wegenbelasting_min['und'][0]['value'] = $xml -> wegenbelasting_kwartaal->attributes()->min[0];
+	}
+	
+	//Add wegenbelasting max
+	if (isset($xml -> wegenbelasting_kwartaal) && !empty($xml -> wegenbelasting_kwartaal->attributes()->max[0]))
+	{
+		$node -> field_wegenbelasting_max['und'][0]['value'] = $xml -> wegenbelasting_kwartaal->attributes()->max[0];
+	}
+	
+	//Add energielabel
+	if (!empty($xml -> energielabel))
+	{
+		$node -> field_energielabel['und'][0]['value'] = $xml -> energielabel;
+	}
+	
+	//Add gemiddeld verbruik 
+	if (!empty($xml -> gemiddeld_verbruik))
+	{
+		$node -> field_gemiddeld_verbruik['und'][0]['value'] = $xml -> gemiddeld_verbruik;
+	}
+	
+	//Add verbruik stad
+	if (!empty($xml -> verbruik_stad))
+	{
+		$node -> field_verbruik_stad['und'][0]['value'] = $xml -> verbruik_stad;
+	}
+	
+	//Add verbruik snelweg
+	if (!empty($xml -> verbruik_snelweg))
+	{
+		$node -> field_verbruik_snelweg['und'][0]['value'] = $xml -> verbruik_snelweg;
+	}
+	
+
+	//Add Datum binnenkomst
+	$node -> field_datum_binnenkomst['und'][0]['value'] = date("Y-m-d", strtotime($xml -> datum_binnenkomst));
+	//$node->field_datum_binnenkomst['und'][0]['value'] = date("Y-m-d", strtotime("31-12-2013"));
+
+	//Add verkocht
+	$node -> field_verkocht['und'][0]['value'] = $xml -> verkocht;
+	
+	//Add opmerkingen
+	$node -> field_opmerkingen['und'][0]['value'] = $xml -> opmerkingen;
+
+	//Add each accessoiry (foreach with index to distinguish the fields in the list)
+	//print_r ($xml->accessoires);
+	$index = 1;
+	foreach ($xml->accessoires->accessoire as $accessoire) {
+		$node -> field_accessoires['und'][$index]['value'] = $accessoire;
+		$index++;
+	}
+	
+	//Add videos
+	if(!empty($xml -> videos))
+	{
+		$index = 1;
+
+		foreach ($xml->videos->video as $video) {
+			
+			//print($video->embedCode);
+			$node -> field_videos['und'][$index]['value'] = ($video->embedCode);
+			$index++;
+			//exit();
+		}
+	}
+
+	
+	
+
+	//Voeg foto's toe
+	verwerk_fotos($xml, $node);
+
+	node_save($node);
+
+	echo "1";
+
+}
+
+function change_auto($xml) {
+
+
+	$query = new EntityFieldQuery();
+
+	$query -> entityCondition('entity_type', 'node', '=') -> fieldCondition('field_hexon_id', 'value', $xml -> voertuignr_hexon, '=') -> range(0, 1);
+
+	$result = $query -> execute();
+	
+	if (empty($result)) {
+		die('Hexon ID does not exist');
+	}
+
+	$node_id = key($result['node']);
+
+	node_delete($node_id);
+	
+	add_auto($xml);
+
+}
+
+function delete_auto($xml) {
+
+	/*$param = array(
+	 'field_hexon_id' => $xml->voertuignr_hexon
+	 );*/
+
+	$query = new EntityFieldQuery();
+
+	$query -> entityCondition('entity_type', 'node', '=') -> fieldCondition('field_hexon_id', 'value', $xml -> voertuignr_hexon, '=') -> range(0, 1);
+
+	$result = $query -> execute();
+
+	$node_id = key($result['node']);
+
+	node_delete($node_id);
+
+	echo "1";
+}
+
+
+function verwerk_fotos($xml, $node) {
+
+	global $base;
+
+	$upload_path = variable_get('file_public_path', conf_path() . '/files');
+	//$upload_path = 'sites/default/files';
+
+	//Remove old foto's
+	if (is_dir($base . $upload_path . '/fotos/' . $xml -> voertuignr_hexon . "/")) {
+		rrmdir($base . $upload_path . '/fotos/' . $xml -> voertuignr_hexon . "/");
+
+	}
+	
+	//echo $base . $upload_path . '/fotos/' . $xml -> voertuignr_hexon . "/--";
+	//mkdir($base . $upload_path . '/fotos/' . $xml -> voertuignr_hexon . "/");
+	
+
+	$index = 1;
+
+	foreach ($xml->afbeeldingen->afbeelding as $foto_nr => $afbeelding) {
+		//print "<pre>";
+		//print($afbeelding->url);
+		$upload_path = variable_get('file_public_path', conf_path() . '/files');
+		
+		$bestandsnaam = $base . $upload_path . '/fotos/' . $xml -> voertuignr_hexon . "/" . $xml -> voertuignr_hexon . '-' . $index . '.jpg';
+			
+		$index++;
+
+		$filename = '/fotos/' . $xml -> voertuignr_hexon . "/" . $xml -> voertuignr_hexon . '-' . rand() . '.jpg';
+		//$image = file_get_contents($afbeelding->url);
+		$image = file_get_contents($afbeelding);
+		
+		if (!is_dir('public://fotos/' . $xml -> voertuignr_hexon . "/")) { 
+			drupal_mkdir('public://fotos/' . $xml -> voertuignr_hexon . "/");
+		}
+		
+		
+		$file = file_save_data($image, 'public://' . $filename, FILE_EXISTS_RENAME);
+		//$file = file_save_data($image, 'public://test/testfile.png', FILE_EXISTS_RENAME);
+		//die();
+		//$file = file_save_data($image, variable_get('file_public_path', conf_path() . '/files') . $filename, FILE_EXISTS_RENAME);
+		//echo "public:::: " . variable_get('file_public_path', conf_path() . '/files');
+
+		$node -> field_image_gallery['und'][$index] = (array)$file;
+
+	}
+
+}
+
+function rrmdir($dir) {
+	if (is_dir($dir)) {
+		$objects = scandir($dir);
+		foreach ($objects as $object) {
+			if ($object != "." && $object != "..") {
+				if (filetype($dir . "/" . $object) == "dir")
+					rrmdir($dir . "/" . $object);
+				else
+					unlink($dir . "/" . $object);
+			}
+		}
+		reset($objects);
+		rmdir($dir);
+	}
+}
+
+
+function checkSoldCars() {
+	$query = new EntityFieldQuery();
+  	$result = $query->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', 'auto')
+    ->fieldCondition('field_verkocht', 'value', 'j')
+    ->execute();
+  	
+	if(!empty($result)) {
+		$nodes = node_load_multiple(array_keys($result['node']));
+
+		foreach($nodes as $node){
+			//remove after two weeks
+			if((time() - $node->changed)>(24*3600*14))
+			{
+				 //echo "delete node" . $node->field_hexon_id['und']['0']['value'] . "<br />";
+				 node_delete($node->nid);
+			}
+		}
+	}
+  	
+	
+}
+
+function cleanText($str){
+
+$str = str_replace("Ñ" ,"N", $str);
+$str = str_replace("ñ" ,"n", $str);
+$str = str_replace("ñ" ,"n", $str);
+$str = str_replace("Á","A", $str);
+$str = str_replace("á","a", $str);
+$str = str_replace("É","E", $str);
+$str = str_replace("é","e", $str);
+$str = str_replace("ú","u", $str);
+$str = str_replace("ù","u", $str);
+$str = str_replace("Í","I", $str);
+$str = str_replace("í","i", $str);
+$str = str_replace("Ó","O", $str);
+$str = str_replace("ó","o", $str);
+$str = str_replace("“","&#8220;", $str);
+$str = str_replace("”","&#8221;", $str);
+
+$str = str_replace("‘","&#8216;", $str);
+$str = str_replace("’","&#8217;", $str);
+$str = str_replace("—","-", $str);
+$str = str_replace(" ","-", $str);
+
+$str = str_replace("–","-", $str);
+$str = str_replace("ü","u", $str);
+$str = str_replace("Ü","U", $str);
+$str = str_replace("Ê","E", $str);
+$str = str_replace("ë","e", $str);
+$str = str_replace("ê","e", $str);
+$str = str_replace("Ç","C", $str);
+$str = str_replace("ç","c", $str);
+$str = str_replace("È","E", $str);
+$str = str_replace("è","e", $str);
+$str = str_replace("Š","S", $str);
+
+
+return $str;
+
+}

@@ -1,0 +1,8 @@
+name = XML Import
+description = Handles XML imports from WheelerDelta
+package = Core
+version = VERSION
+core = 7.x
+
+
+

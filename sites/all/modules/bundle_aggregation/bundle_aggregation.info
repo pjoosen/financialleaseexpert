@@ -1,0 +1,11 @@
+name = Bundle aggregation
+description = Aggregate Javascript and CSS files in a few bundle per page in a scalable way.
+package = "Performance and scalability"
+core = 7.x
+configure = admin/config/development/bundle-aggregation
+; Information added by drupal.org packaging script on 2012-08-21
+version = "7.x-1.1"
+core = "7.x"
+project = "bundle_aggregation"
+datestamp = "1345548113"
+
